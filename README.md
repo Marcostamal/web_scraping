@@ -66,3 +66,11 @@ Usamos .text para guardar en la variable la pagina en formato de texto.
 <p align="center">
 <img src="/imagenes/respuesta_requests.png"  height="200">
 </p>
+La imagen muestra un ejemplo de lo que podrias ver si tu ejecutas el codigo.
+
+## **Paso 4**
+### **Instanciar un objeto de la clase beautifulsoup**
+<p align="center">
+<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fkimetsu-no-yaiba.fandom.com%2Fwiki%2FAkaza&psig=AOvVaw0Ciyo3SNd_lGynhaLNI_-h&ust=1683314596869000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCJCzhtex3P4CFQAAAAAdAAAAABAE"  height="400">
+</p>
+
