@@ -47,3 +47,10 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 ~~~
+
+## **Paso 2**
+### **Conseguir la url de la pagina**
+En una variable que llamaremos url meteremos un string que correspondera al enlace de la pagina a la que haremos web scraping.
+~~~
+url = "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies"   # Direccion de la pagina con la data que queremos
+~~~
