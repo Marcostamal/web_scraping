@@ -224,6 +224,13 @@ df.head()
 <img src="/imagenes/dataframe.png"  height="200">
 </p>
 
+Ahora estas listo para seguir tu camino de cazador de demonios, ya sabes lo que es y como hacer web scraping.
+Esta info la del siguiente curso [link](https://www.udemy.com/course/datasciencemachinelearningpython/)
+
+<p align="center">
+<img src="https://depor.com/resizer/B5_AkCwsoHKuvWAaD77TjfeNPzY=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/DFKZSYSKMNBQJP2UTTS2ESU6HA.jpg"  height="200">
+</p>
+
 
 
 
