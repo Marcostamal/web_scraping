@@ -140,9 +140,28 @@ creamos una nueva variable la cual contendra la informacion de la tabla (desde "
 Ahora mismo estamos listos para sacar la info.
 
 ## **Paso 6**
+### **Obtener los encabezados de nuestra tabla**
 
 <p align="center">
 <img src="https://e1.pxfuel.com/desktop-wallpaper/731/501/desktop-wallpaper-akaza-kimetsu-no-yaiba-kyojuro-rengoku-demon-slayer-kimetsu-no-yaiba-akaza.jpg"  height="400">
 </p>
+
+Nuestro enfrentamiento contra Akaza a comenzado, tenemos que encontrar el nombre de las columnas para debilitarlo.
+
+Como hacemos eso?
+~~~
+encabezados = tabla_500.tbody
+linea_encabezado = encabezados.tr
+linea_encabezado
+~~~
+
+Dentro de nuestra tabla hay una etiqueta llamada tbody la cual contiene el cuerpo de nuestra tabla, la primera linea de el codigo de arriba hace referencia a eso, lo que esta haciendo es tener los datos a partir de ahi, imagina que la tabla es un platano, has de cuenta que lo estas pelando.
+
+La segunda linea esta haciendo lo mismo, la etiqueta se llama tr observa lo que devuelve.
+
+<p align="center">
+<img src="/imagenes/encabezados.png"  height="400">
+</p>
+
 
 
