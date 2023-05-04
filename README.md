@@ -21,3 +21,10 @@ Cuando visitamos una página web, nuestro navegador manda una solicitud a un ser
 - De imagen, como JPG y PNG, que permiten que las páginas web muestren imágenes.
 
 En principio, nos interesa el contenido principal de la página web, por lo que nuestro objetivo es extraer datos del archivo HTML.
+
+
+## **Ejemplo practico**
+
+Haremos web scraping a esta pagina: [Click aqui para verla](https://en.wikipedia.org/wiki/List_of_S%26P_500_companies) esta pagina contiene informacion sobre las 500 empresas que pertenecen al indice S&P 500 de Estados Unidos, este indice hace referencia a las mejores 500 empresas que cotizan en la bolsa de valores.
+
+Una vez que mires la pagina te daras cuenta de que no tiene algo como una API ni tampoco un link de descarga para un archivo de texto, csv, json, etc. que nos facilite informacion de alguna de las tablas, ya que esa es la data que nosotros consideramos interesante, asi que no queda mas que hacer web scraping. Como todo buen cazador de demonios que eres ya supongo sabes algo de python asi que esto te resultara facil y si no al terminar esto lo veras de esa manera o eso espero.
