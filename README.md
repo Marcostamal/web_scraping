@@ -118,7 +118,7 @@ Buscar la etiqueta que hace referencia a la tabla que queremos y conseguir algo 
 Cada que tu pasas el cursor por el codigo que recien abriste en la pagina web, se sombrea la parte a la que hace referencia.
 
 imagina que mi cursor es la mancha verde.
-<p align="center">
-<img src="sombra.png">
-</p>
 
+<p align="center">
+<img src="/imagenes/sombra.png"  height="400">
+</p>
