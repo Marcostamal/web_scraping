@@ -137,4 +137,12 @@ tabla_500 = soup.find("table", attrs={"id": "constituents"})  # attrs una manera
 
 creamos una nueva variable la cual contendra la informacion de la tabla (desde "<table.> hasta </table.>" le puse un punto para que se vea) eso lo hacemos con la funcion find() la cual lo que hace es buscar la etiqueta y con un atributo que es el que identifica a la tabla, en la imagen puedes ver que el id tiene el valor "constituents" que es el mismo que estamos pasando como parametro para poder identificar la tabla. Mas abajo en la misma imagen aparece la otra tabla, puedes ver que es diferente.
 
+Ahora mismo estamos listos para sacar la info.
+
+## **Paso 6**
+
+<p align="center">
+<img src="https://e1.pxfuel.com/desktop-wallpaper/731/501/desktop-wallpaper-akaza-kimetsu-no-yaiba-kyojuro-rengoku-demon-slayer-kimetsu-no-yaiba-akaza.jpg"  height="400">
+</p>
+
 
