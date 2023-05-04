@@ -122,3 +122,10 @@ imagina que mi cursor es la mancha verde.
 <p align="center">
 <img src="/imagenes/sombra.png"  height="400">
 </p>
+Si se sombrea la parte de la izquierda de algun color es porque ese codigo hace referencia a esa parte, podemos navegar dentro del codigo hasta encontrar nuestra tabla que en este caso esta con la etiqueta "table".
+
+<p align="center">
+<img src="/imagenes/sombra2.png"  height="400">
+</p>
+LA ENCONTRAMOS!!
+
