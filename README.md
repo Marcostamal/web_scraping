@@ -79,7 +79,7 @@ Ahora utilizaremos la libreria de beautifulsoup, crearemos una variable llamada 
 soup = BeautifulSoup(html_content)  # creamos una instancia de la libreria que importamos utilizando el contenido de la pagina (el texto html)
 ~~~
 <p align="center">
-<img src="/imagenes/vista.png"  height="200">
+<img src="/imagenes/vista.png"  height="400">
 </p>
 veras que ahora lo que nos devuelve no es solo una linea, lo que nos devuelve ya es un poco mas al orden que tendria el codigo si una persona recien lo estaria escribiendo.
 
