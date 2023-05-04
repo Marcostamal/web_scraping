@@ -163,5 +163,24 @@ La segunda linea esta haciendo lo mismo, la etiqueta se llama tr observa lo que 
 <img src="/imagenes/encabezados.png"  height="400">
 </p>
 
+Dentro de las etiquetas tr se encuentran las etiquetas th que son las que contienen la informacion correspondiente a los nombres de las columnas, que se les ocurre hacer para obtener esa informacion?. EXACTO una iteracion.
+
+~~~
+#lista para guardar los nombres de las columnas
+columnas = []
+
+
+for th in linea_encabezado.find_all("th"):  #Busco este valor en mis datos ya que ahi se encuentran los nombres de los encabezados
+    columnas.append(th.text.replace("\n", "").strip()) # Limpio el nombre y lo agrego a la lista
+    
+columnas
+~~~
+
+Lo que estamos haciendo es iterar por cada etiqueta th y extrayendo la informacion que nececitamos.
+
+ <p align="center">
+<img src="/imagenes/encabezados_limpio.png"  height="400">
+</p>
+
 
 
