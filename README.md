@@ -64,5 +64,5 @@ html_content = requests.get(url).text  # Obtenemos la pagina en formato html
 ~~~
 Usamos .text para guardar en la variable la pagina en formato de texto.
 <p align="center">
-<img src="/imagenes/respuesta_requests.png"  height="400">
+<img src="/imagenes/respuesta_requests.png"  height="200">
 </p>
