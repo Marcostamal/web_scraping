@@ -75,9 +75,11 @@ La imagen muestra un ejemplo de lo que podrias ver si tu ejecutas el codigo.
 </p>
 AY MI MADREE!!! y no es el bicho, se nos ha aparecido Akasa una de las lunas superiores mejor conocido como el panadero, no te preocupes si crees que a ti tambien te hara una dona, tu deber es matarlo y aprender sobre web scraping.
 Ahora utilizaremos la libreria de beautifulsoup, crearemos una variable llamada soup en la que instancearemos un objeto de la clase beautifulsoup con el contenido de nuestra pagina web como parametro es decir lo hecho anteriormente.
+
 ~~~
 soup = BeautifulSoup(html_content)  # creamos una instancia de la libreria que importamos utilizando el contenido de la pagina (el texto html)
 ~~~
+
 <p align="center">
 <img src="/imagenes/vista.png"  height="400">
 </p>
