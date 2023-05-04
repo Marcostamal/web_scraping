@@ -129,3 +129,12 @@ Si se sombrea la parte de la izquierda de algun color es porque ese codigo hace 
 </p>
 LA ENCONTRAMOS!!
 
+Una vez que la encontramos escribimos el siguiente codigo.
+
+~~~
+tabla_500 = soup.find("table", attrs={"id": "constituents"})  # attrs una manera de identificar la tabla en la pagina
+~~~
+
+creamos una nueva variable la cual contendra la informacion de la tabla (desde "<table>" hasta "</table>") eso lo hacemos con la funcion find() la cual lo que hace es buscar la etiqueta y con un atributo que es el que identifica a la tabla, en la imagen puedes ver que el id tiene el valor "constituents" que es el mismo que estamos pasando como parametro para poder identificar la tabla. Mas abajo en la misma imagen aparece la otra tabla, puedes ver que es diferente.
+
+
