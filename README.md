@@ -54,3 +54,63 @@ En una variable que llamaremos url meteremos un string que correspondera al enla
 ~~~
 url = "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies"   # Direccion de la pagina con la data que queremos
 ~~~
+
+## **Paso 3**
+### **Hacer la peticion a la pagina con requests**
+Lo siguiente que haremos sera usar la funcion .get() de requests, esta funcion hace una peticion a la pagina que pasemos como parametro en este caso nosotros ya antes creamos una variable la cual contiene esa informacion asi que la pasamos mas o menos asi.
+
+~~~
+html_content = requests.get(url).text  # Obtenemos la pagina en formato html
+~~~
+Usamos .text para guardar en la variable la pagina en formato de texto.
+<p align="center">
+<img src="/imagenes/respuesta_requests.png"  height="200">
+</p>
+La imagen muestra un ejemplo de lo que podrias ver si tu ejecutas el codigo.
+
+## **Paso 4**
+### **Instanciar un objeto de la clase beautifulsoup**
+<p align="center">
+<img src="https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/e/e1/Akaza_Full_Body_Design_%28Anime%29.png/revision/latest/scale-to-width-down/350?cb=20211013090054"  height="400">
+</p>
+AY MI MADREE!!! y no es el bicho, se nos ha aparecido Akasa una de las lunas superiores mejor conocido como el panadero, no te preocupes si crees que a ti tambien te hara una dona, tu deber es matarlo y aprender sobre web scraping.
+Ahora utilizaremos la libreria de beautifulsoup, crearemos una variable llamada soup en la que instancearemos un objeto de la clase beautifulsoup con el contenido de nuestra pagina web como parametro es decir lo hecho anteriormente.
+
+~~~
+soup = BeautifulSoup(html_content)  # creamos una instancia de la libreria que importamos utilizando el contenido de la pagina (el texto html)
+~~~
+
+En caso de algun error instala la libreria "lxml"
+
+<p align="center">
+<img src="/imagenes/vista.png"  height="400">
+</p>
+Veras que ahora lo que nos devuelve no es solo una linea, lo que nos devuelve ya es un poco mas al orden que tendria el codigo si una persona recien lo estaria escribiendo.
+
+
+Antes de seguir quiero que mires la segunda linea que imprime el codigo en la imagen de arriba, comienza con "<title>" y termina con algo similar "</title>", esto es porque bueno, si no nos hemos dado cuenta ya es hora de darnos cuenta de que el texto que tenemos, lo que nos devolvio la pagina esta en html, html es un lenguaje que trabaja con etiquetas, estas etiquetas son usadas para referirse a partes de la pagina web, que se muestren y se organizen de una cierta manera, en este caso "title" esta haciendo referencia al titulo de la pagina web. el primer title hace referencia al inicio de esa parte y el segundo title a donde termina.
+La funcion de beautifulsoup es convertir esas etiquetas en atributos por asi decirlo, entonces nosotros con eso podemos trabajar mas facil y con lo siguiente ya te estaras dando idea de lo que estaremos haciendo.
+
+Ejemplo:
+~~~
+soup.title.text # ejemplo de conseguir el titulo de la pagina en este caso .text quita las etiquetas de los lados
+~~~
+
+Esto nos devolvera el titulo de la pagina que en este caso es: 'List of S&P 500 companies - Wikipedia' puedes verificarlo mirando el texto que viene en la pestaña de la pagina web.
+
+## **Paso 5**
+### **Buscar la tabla en la pagina web**
+
+Ok, Akaza quiere vernos, nos quiere dejar ciegos y confusos, pero nosotros no nos dejaremos, lo siguiente podria ser el paso mas tedioso.
+Has lo siguiente.
+- Posicionate en la pagina web.
+- En alguna parte de la pagina da click derecho.
+- Selecciona la opcion que dice inspeccionar.
+- En la parte derecha deberia abrirse una mini pestaña con codigo, si eso es lo que paso, vamos bien.
+
+Te estaras preguntando que rayos es eso, eso que ves es la pagina web pero en su forma de codigo osea el archivo html, lo mismo que nosotros tenemos ahora mismo en nuestro python.
+Que es lo que tenemos que hacer?
+Buscar la etiqueta que hace referencia a la tabla que queremos y conseguir algo que la identifique, ¿Por que? porque nuestra pagina web tiene 2 tablas, es probable que si tuvieramos una no habria problema, pero al ser dos, debemos poder diferenciarla de la otra para poder obtener los datos.
+¿Como haremos eso?
+Cada que tu pasas el cursor por el codigo que recien abriste en la pagina web, se sombrea la parte a la que hace referencia.
+
