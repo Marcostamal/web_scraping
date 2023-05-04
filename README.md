@@ -28,3 +28,21 @@ En principio, nos interesa el contenido principal de la página web, por lo que 
 Haremos web scraping a esta pagina: [Click aqui para verla](https://en.wikipedia.org/wiki/List_of_S%26P_500_companies) esta pagina contiene informacion sobre las 500 empresas que pertenecen al indice S&P 500 de Estados Unidos, este indice hace referencia a las mejores 500 empresas que cotizan en la bolsa de valores.
 
 Una vez que mires la pagina te daras cuenta de que no tiene algo como una API ni tampoco un link de descarga para un archivo de texto, csv, json, etc. que nos facilite informacion de alguna de las tablas, ya que esa es la data que nosotros consideramos interesante, asi que no queda mas que hacer web scraping. Como todo buen cazador de demonios que eres ya supongo sabes algo de python asi que esto te resultara facil y si no al terminar esto lo veras de esa manera o eso espero.
+
+## **Paso 1**
+### **Importar las librerias**
+Para esto necesitamos primero tener instaladas las librerias de requests y beautifulsoup, ademas de la ya famosa libreria de pandas.
+Seria perfecto que puedas pasarte por los siguientes links para que veas la info sobre las librerias, en resumen te dire que la libreria de requests se usa para hacer peticiones a paginas web y beautifulsoup sirve para que la info en formato html se vea bonita, pero no te quedes con eso, INVESTIGA.
+[libreria requests](https://pypi.org/project/requests/)
+
+[libreria beautifulsoup](https://pypi.org/project/beautifulsoup4/)
+
+Teniendo las librerias instaladas ahora si importamos.
+
+~~~
+# pip install requests
+# pip install beautifulsoup4
+import requests
+from bs4 import BeautifulSoup
+import pandas as pd
+~~~
