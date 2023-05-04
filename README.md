@@ -54,3 +54,15 @@ En una variable que llamaremos url meteremos un string que correspondera al enla
 ~~~
 url = "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies"   # Direccion de la pagina con la data que queremos
 ~~~
+
+## **Paso 3**
+### **Hacer la peticion a la pagina con requests**
+Lo siguiente que haremos sera usar la funcion .get() de requests, esta funcion hace una peticion a la pagina que pasemos como parametro en este caso nosotros ya antes creamos una variable la cual contiene esa informacion asi que la pasamos mas o menos asi.
+
+~~~
+html_content = requests.get(url).text  # Obtenemos la pagina en formato html
+~~~
+Usamos .text para guardar en la variable la pagina en formato de texto.
+<p align="center">
+<img src="/imagenes/respuesta_requests.png"  height="400">
+</p>
