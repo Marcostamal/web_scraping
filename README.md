@@ -73,4 +73,15 @@ La imagen muestra un ejemplo de lo que podrias ver si tu ejecutas el codigo.
 <p align="center">
 <img src="https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/e/e1/Akaza_Full_Body_Design_%28Anime%29.png/revision/latest/scale-to-width-down/350?cb=20211013090054"  height="400">
 </p>
+AY MI MADREE!!! y no es el bicho, se nos ha aparecido Akasa una de las lunas superiores mejor conocido como el panadero, no te preocupes si crees que a ti tambien te hara una dona, tu deber es matarlo y aprender sobre web scraping.
+Ahora utilizaremos la libreria de beautifulsoup, crearemos una variable llamada soup en la que instancearemos un objeto de la clase beautifulsoup con el contenido de nuestra pagina web como parametro es decir lo hecho anteriormente.
+~~~
+soup = BeautifulSoup(html_content)  # creamos una instancia de la libreria que importamos utilizando el contenido de la pagina (el texto html)
+~~~
+<p align="center">
+<img src="/imagenes/vista.png"  height="200">
+</p>
+veras que ahora lo que nos devuelve no es solo una linea, lo que nos devuelve ya es un poco mas al orden que tendria el codigo si una persona recien lo estaria escribiendo.
+
+
 
