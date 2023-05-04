@@ -5,7 +5,7 @@
 UMAAAAAAI!! Hola soy Rengoku el donitas bimbo y hoy te enseñare lo que es web scraping y como utilizarlo para que puedas agregar mas data a tus proyectos.
 El web scraping se refiere al proceso de extracción de contenidos y datos de sitios web mediante software.
 
-## **Como hacer web scraping**
+## **¿Como hacer web scraping?**
 Para extraer datos de una web, se puede utilizar código de Python o recurrir a otras opciones, como utilizar una API o herramientas específicas para estas tareas.
 
 *Nota*: una API es una interfaz de programación de aplicaciones, que permite la comunicación entre dos aplicaciones de software a través de un conjunto de reglas.
