@@ -186,6 +186,9 @@ Lo que estamos haciendo es iterar por cada etiqueta th y extrayendo la informaci
 ### **Obtener los datos de la tabla**
 
 Ya que tenemos el nombre de las columnas ahora toca sacar los datos y para esto haremos algo similar a lo de arriba
+<p align="center">
+<img src="/imagenes/datos_html.png"  height="400">
+</p>
 
 ~~~
 filas = [] # lista que contendra cada fila
@@ -200,7 +203,7 @@ filas.remove([]) # Los encabezados no tenian td por lo que no recopilo info pero
 ~~~
 
 <p align="center">
-<img src="/imagenes/datos_html.png"  height="400">
+<img src="/imagenes/datos_limpio.png"  height="400">
 </p>
 
 
