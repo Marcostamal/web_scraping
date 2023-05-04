@@ -85,5 +85,13 @@ soup = BeautifulSoup(html_content)  # creamos una instancia de la libreria que i
 </p>
 veras que ahora lo que nos devuelve no es solo una linea, lo que nos devuelve ya es un poco mas al orden que tendria el codigo si una persona recien lo estaria escribiendo.
 
+Antes de seguir quiero que mires la segunda linea que imprime el codigo en la imagen de arriba, comienza con "<title>" y termina con algo similar "</title>", esto es porque bueno, si no nos hemos dado cuenta ya es hora de darnos cuenta de que el texto que tenemos, lo que nos devolvio la pagina esta en html, html es un lenguaje que trabaja con etiquetas, estas etiquetas son usadas para referirse a partes de la pagina web, que se muestren y se organizen de una cierta manera, en este caso "title" esta haciendo referencia al titulo de la pagina web.
+La funcion de beautifulsoup es convertir esas etiquetas en atributos por asi decirlo, entonces nosotros con eso podemos trabajar mas facil y con lo siguiente ya te estaras dando idea de lo que estaremos haciendo.
+
+Ejemplo:
+~~~
+soup.title.text # ejemplo de conseguir el titulo de la pagina en este caso .text quita las etiquetas de los lados
+~~~
+esto nos devolvera el titulo de la pagina que en este caso es: 'List of S&P 500 companies - Wikipedia' puedes verificarlo mirando el texto que viene en la pestaña de la pagina web.
 
 
