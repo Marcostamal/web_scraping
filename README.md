@@ -33,11 +33,12 @@ Una vez que mires la pagina te daras cuenta de que no tiene algo como una API ni
 ### **Importar las librerias**
 Para esto necesitamos primero tener instaladas las librerias de requests y beautifulsoup, ademas de la ya famosa libreria de pandas.
 Seria perfecto que puedas pasarte por los siguientes links para que veas la info sobre las librerias, en resumen te dire que la libreria de requests se usa para hacer peticiones a paginas web y beautifulsoup sirve para que la info en formato html se vea bonita, pero no te quedes con eso, INVESTIGA.
+
 [libreria requests](https://pypi.org/project/requests/)
 
 [libreria beautifulsoup](https://pypi.org/project/beautifulsoup4/)
 
-Teniendo las librerias instaladas ahora si importamos.
+Teniendo las librerias instaladas ahora si importamos, recuerda haremos esto en un notebook de python.
 
 ~~~
 # pip install requests
