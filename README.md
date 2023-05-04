@@ -221,7 +221,7 @@ df.head()
 ~~~
 
 <p align="center">
-<img src="/imagenes/dataframe.png"  height="400">
+<img src="/imagenes/dataframe.png"  height="200">
 </p>
 
 
