@@ -178,8 +178,29 @@ columnas
 
 Lo que estamos haciendo es iterar por cada etiqueta th y extrayendo la informacion que nececitamos.
 
- <p align="center">
+<p align="center">
 <img src="/imagenes/encabezados_limpio.png"  height="400">
+</p>
+
+## **Paso 7**
+### **Obtener los datos de la tabla**
+
+Ya que tenemos el nombre de las columnas ahora toca sacar los datos y para esto haremos algo similar a lo de arriba
+
+~~~
+filas = [] # lista que contendra cada fila
+
+for linea in datos_tabla.find_all("tr"): # Cada que pasemos por un valor tr creamos una lista
+    fila = []
+    for td in linea.find_all("td"):   # Cada que pasemos por valores td agregamos el texto a la lista que creamos un paso antes
+        fila.append(td.text.replace("\n","").strip())
+    filas.append(fila)   # Esa lista recien creada la agregamos a la lista llamada filas
+
+filas.remove([]) # Los encabezados no tenian td por lo que no recopilo info pero si genero una lista vacia
+~~~
+
+<p align="center">
+<img src="/imagenes/datos_html.png"  height="400">
 </p>
 
 
