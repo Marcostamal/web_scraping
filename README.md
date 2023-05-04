@@ -109,8 +109,10 @@ Has lo siguiente.
 - En la parte derecha deberia abrirse una mini pestaña con codigo, si eso es lo que paso, vamos bien.
 
 Te estaras preguntando que rayos es eso, eso que ves es la pagina web pero en su forma de codigo osea el archivo html, lo mismo que nosotros tenemos ahora mismo en nuestro python.
+
 Que es lo que tenemos que hacer?
 Buscar la etiqueta que hace referencia a la tabla que queremos y conseguir algo que la identifique, ¿Por que? porque nuestra pagina web tiene 2 tablas, es probable que si tuvieramos una no habria problema, pero al ser dos, debemos poder diferenciarla de la otra para poder obtener los datos.
+
 ¿Como haremos eso?
 Cada que tu pasas el cursor por el codigo que recien abriste en la pagina web, se sombrea la parte a la que hace referencia.
 
