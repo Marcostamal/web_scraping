@@ -11,3 +11,13 @@ Para extraer datos de una web, se puede utilizar código de Python o recurrir a 
 *Nota*: una API es una interfaz de programación de aplicaciones, que permite la comunicación entre dos aplicaciones de software a través de un conjunto de reglas.
 
 Algunos sitios web, como Twitter, facilitan directamente una API para poder acceder a sus datos. El problema es que la mayoría de los sitios web no tienen API o, incluso cuando sí que tienen, los datos que permiten obtener no son los que nosotros necesitamos. En estos casos, crear un rastreador web con Python es una buena solución.
+
+## **Conceptos previos de paginas web**
+
+Cuando visitamos una página web, nuestro navegador manda una solicitud a un servidor web para obtener archivos de dicho servidor. El servidor devuelve archivos que le indican a nuestro navegador cómo debe mostrar la página. Básicamente, estos archivos pueden ser:
+- De tipo HTML, que contienen el contenido principal de una página.
+- De tipo CSS, que agregan estilos de colores y formatos a la página.
+- De tipo JS (Javascript), que agregan interactividad a las páginas web.
+- De imagen, como JPG y PNG, que permiten que las páginas web muestren imágenes.
+
+En principio, nos interesa el contenido principal de la página web, por lo que nuestro objetivo es extraer datos del archivo HTML.
