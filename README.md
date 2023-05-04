@@ -206,5 +206,24 @@ filas.remove([]) # Los encabezados no tenian td por lo que no recopilo info pero
 <img src="/imagenes/datos_limpio.png"  height="400">
 </p>
 
+## **Paso 8**
+### **Crear un Dataframe**
+
+<p align="center">
+<img src="https://www.geekmi.news/__export/1624295721382/sites/debate/img/2021/06/21/akavsren.jpg_423682103.jpg"  height="400">
+</p>
+
+Despues de un largo trabajo por fin hemos derrotado a Akaza, ya tenemos nuestros datos y tambien tenemos el nombre de las columnas entonces esa informacion la podemos usar para crear un dataframe 
+
+~~~
+df = pd.DataFrame(data=filas, columns=columnas)
+df.head()
+~~~
+
+<p align="center">
+<img src="/imagenes/dataframe.png"  height="400">
+</p>
+
+
 
 
